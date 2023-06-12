@@ -1,7 +1,7 @@
 (export (version "E")
   (design
-    (source "/home/user/PCIe_x16-to-x8_Debifurcator/PCIe_x16-to-x8_Debifurcator.kicad_sch")
-    (date "Wed 07 Jun 2023 11:53:29 PM")
+    (source "/home/user/Documents/Downloads2023-06-12/PCIe_x16-to-x8_Debifurcator-0.1-alpha/PCIe_x16-to-x8_Debifurcator.kicad_sch")
+    (date "Mon 12 Jun 2023 04:09:36 PM")
     (tool "Eeschema 7.0.5-7.0.5~ubuntu20.04.1")
     (sheet (number "1") (name "/") (tstamps "/")
       (title_block
@@ -20,6 +20,16 @@
         (comment (number "8") (value ""))
         (comment (number "9") (value "")))))
   (components
+    (comp (ref "C1")
+      (value "0u1")
+      (footprint "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder")
+      (libsource (lib "Device") (part "C_Small") (description "Unpolarized capacitor, small symbol"))
+      (property (name "Sheetname") (value ""))
+      (property (name "Sheetfile") (value "PCIe_x16-to-x8_Debifurcator.kicad_sch"))
+      (property (name "ki_description") (value "Unpolarized capacitor, small symbol"))
+      (property (name "ki_keywords") (value "capacitor cap"))
+      (sheetpath (names "/") (tstamps "/"))
+      (tstamps "10683726-c2ee-44f0-b924-58e77226ce32"))
     (comp (ref "J1")
       (value "PCI_Express_x8")
       (footprint "Connector_PCBEdge:BUS_PCIexpress_x8")
@@ -389,6 +399,18 @@
         (field (name "Datasheet") "~"))
       (pins
         (pin (num "1") (name "1") (type "passive"))))
+    (libpart (lib "Device") (part "C_Small")
+      (description "Unpolarized capacitor, small symbol")
+      (docs "~")
+      (footprints
+        (fp "C_*"))
+      (fields
+        (field (name "Reference") "C")
+        (field (name "Value") "C_Small")
+        (field (name "Datasheet") "~"))
+      (pins
+        (pin (num "1") (name "") (type "passive"))
+        (pin (num "2") (name "") (type "passive"))))
     (libpart (lib "Device") (part "R_Small")
       (description "Resistor, small symbol")
       (docs "~")
@@ -429,6 +451,7 @@
       (node (ref "J2") (pin "B2") (pinfunction "+12V") (pintype "passive"))
       (node (ref "J2") (pin "B3") (pinfunction "+12V") (pintype "passive")))
     (net (code "4") (name "/PRSNT1")
+      (node (ref "C1") (pin "1") (pintype "passive"))
       (node (ref "J1") (pin "A1") (pinfunction "~{PRSNT1}") (pintype "passive"))
       (node (ref "J1") (pin "B48") (pinfunction "~{PRSNT2}") (pintype "passive"))
       (node (ref "J2") (pin "A1") (pinfunction "~{PRSNT1}") (pintype "passive"))
@@ -437,6 +460,7 @@
       (node (ref "TP1") (pin "1") (pinfunction "1") (pintype "passive"))
       (node (ref "TP4") (pin "1") (pinfunction "1") (pintype "passive")))
     (net (code "5") (name "GND")
+      (node (ref "C1") (pin "2") (pintype "passive"))
       (node (ref "J1") (pin "A12") (pinfunction "GND") (pintype "passive"))
       (node (ref "J1") (pin "A15") (pinfunction "GND") (pintype "passive"))
       (node (ref "J1") (pin "A18") (pinfunction "GND") (pintype "passive"))
