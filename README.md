@@ -12,7 +12,7 @@ Only a single straddle-mount PCIe x16 Connector is required, such as: [10025026-
 
 ![PCIe x16-to-x8 Debifurcator PCB Layout](img/PCIe_x16-to-x8_Debifurcator_PCB_Layout.png)
 
-All signals are length-matched to within 1mm both inter-pair and intra-pair.
+All differential pairs are length-matched to within 1mm both inter-pair and intra-pair.
 
 
 # Schematic
