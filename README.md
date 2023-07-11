@@ -20,6 +20,13 @@ All differential pairs are length-matched to within 1mm both inter-pair and intr
 ![PCIe x16-to-x8 Debifurcator Schematic](img/PCIe_x16-to-x8_Debifurcator_Schematic.png)
 
 
+# Assembly
+
+The PCIe Connector's Mounting Post needs to be snapped off with need-nose pliers.
+
+![Snap Off PCIe Connector Mounting Post](img/Snap_Off_PCIe_Connector_Mounting_Post.jpg)
+
+
 # PCB Layer Stackup
 
 4-Layer PCB stackup taken from [JLCPCB](https://jlcpcb.com/capabilities/pcb-capabilities).
