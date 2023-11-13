@@ -28,7 +28,7 @@ All differential pairs are length-matched to within 1mm both inter-pair and intr
 
 # Assembly
 
-The PCIe Connector's Mounting Post needs to be snapped off with need-nose pliers.
+The PCIe Connector's Mounting Post needs to be snapped off with needle-nose pliers.
 
 ![Snap Off PCIe Connector Mounting Post](img/Snap_Off_PCIe_Connector_Mounting_Post.jpg)
 
