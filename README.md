@@ -6,7 +6,7 @@ Only a straddle-mount PCIe x16 Connector is required, such as: [10025026-10103TL
 
 ![PCIe x16-to-x8 Debifurcator for Alveo U25](img/PCIe_x16-to-x8_Debifurcator_for_Alveo_U25.jpg)
 
-Related Projects: [alveo_u25_notes](https://github.com/mwrnd/alveo_u25_notes(), [AlveoU25_JTAG_Adapter](https://github.com/mwrnd/AlveoU25_JTAG_Adapter), [ATX_Boot_Delay](https://github.com/mwrnd/ATX_Boot_Delay)
+Related Projects: [alveo_u25_notes](https://github.com/mwrnd/alveo_u25_notes), [AlveoU25_JTAG_Adapter](https://github.com/mwrnd/AlveoU25_JTAG_Adapter), [ATX_Boot_Delay](https://github.com/mwrnd/ATX_Boot_Delay)
 
 
 # Testing and Use Example
